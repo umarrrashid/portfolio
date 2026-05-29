@@ -202,9 +202,8 @@ shadow-lg shadow-blue-500/10">
 
       {/* Stats */}
       <section className="px-6 md:px-24 pb-20">
-        <div className="grid grid-cols-3 gap-6 text-center">
-
-          <div className="bg-white/5 backdrop-blur-xl border border-blue-500/20 rounded-2xl p-6">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center max-w-5xl mx-auto">
+          <div className="bg-white/5 backdrop-blur-xl border border-blue-500/20 rounded-3xl p-8 hover:scale-105 transition-all duration-300">
             <h3 className="text-4xl font-bold">3+</h3>
             <p className="text-gray-400">Projects</p>
           </div>

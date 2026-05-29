@@ -1,5 +1,4 @@
 import chatapp from "./assets/chatapp.png";
-
 export default function App() {
   const skills = [
     "HTML",
@@ -14,36 +13,145 @@ export default function App() {
   ];
 
   const projects = [
-    {
-      title: "Secure Chat Application",
-      desc: "A responsive real-time messaging application built using Node.js, Express, MongoDB, and Socket.io.",
-      live: "https://secure-chat-app-1oe9.onrender.com",
-      github: "https://github.com/umarrrashid",
-      image: chatapp,
-    },
+   {
+  title: "Secure Chat Application",
+  desc: "A responsive real-time messaging application built using Node.js, Express, MongoDB, and Socket.io.",
+  live: "https://secure-chat-app-1oe9.onrender.com",
+  github: "https://github.com/umarrrashid",
+  image: chatapp,
+},
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen font-sans scroll-smooth">
-      {/* Navbar */}
-      <nav className="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-5 border-b border-gray-800 gap-4 sticky top-0 bg-black/90 backdrop-blur z-50">
-        <h1 className="text-3xl font-bold">Umar Rashid</h1>
+<div className="min-h-screen text-white bg-gradient-to-br from-slate-950 via-blue-950 to-black overflow-x-hidden relative">
+
+  <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-blue-500/20 blur-[180px] rounded-full animate-pulse"></div>
+
+  <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-cyan-500/20 blur-[180px] rounded-full animate-pulse"></div>      {/* Navbar */}
+<nav className="fixed top-0 left-0 right-0 z-50
+bg-slate-950/60
+backdrop-blur-xl
+backdrop-saturate-150
+border-b border-blue-500/20
+shadow-lg shadow-blue-500/10">
+
+  <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+
+    <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+      Umar Rashid
+    </h1>
+
+    <div className="flex flex-wrap justify-center gap-6 text-gray-300 text-sm md:text-base">
+
+      <a
+        href="#about"
+        className="hover:text-blue-400 transition duration-300"
+      >
+        About
+      </a>
+
+      <a
+        href="#skills"
+        className="hover:text-blue-400 transition duration-300"
+      >
+        Skills
+      </a>
+
+      <a
+        href="#services"
+        className="hover:text-blue-400 transition duration-300"
+      >
+        Services
+      </a>
+
+      <a
+        href="#projects"
+        className="hover:text-blue-400 transition duration-300"
+      >
+        Projects
+      </a>
+
+      <a
+        href="#contact"
+        className="hover:text-blue-400 transition duration-300"
+      >
+        Contact
+      </a>
+
+    </div>
+
+  </div>
+<nav className="fixed top-0 left-0 right-0 z-50
+bg-slate-950/60
+backdrop-blur-xl
+backdrop-saturate-150
+border-b border-blue-500/20
+shadow-lg shadow-blue-500/10">
+
+  <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+
+    <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+      Umar Rashid
+    </h1>
+
+    <div className="flex flex-wrap justify-center gap-6 text-gray-300 text-sm md:text-base">
+
+      <a
+        href="#about"
+        className="hover:text-blue-400 transition duration-300"
+      >
+        About
+      </a>
+
+      <a
+        href="#skills"
+        className="hover:text-blue-400 transition duration-300"
+      >
+        Skills
+      </a>
+
+      <a
+        href="#services"
+        className="hover:text-blue-400 transition duration-300"
+      >
+        Services
+      </a>
+
+      <a
+        href="#projects"
+        className="hover:text-blue-400 transition duration-300"
+      >
+        Projects
+      </a>
+
+      <a
+        href="#contact"
+        className="hover:text-blue-400 transition duration-300"
+      >
+        Contact
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+       
 
         <div className="flex flex-wrap justify-center gap-5 text-gray-300 text-sm md:text-base">
-          <a href="#about" className="hover:text-white transition">
-            About
+          <a href="#about" className="hover:text-blue-400 transition duration-300">
+            
           </a>
 
-          <a href="#skills" className="hover:text-white transition">
-            Skills
+          <a href="#skills" className="hover:text-blue-400 transition duration-300">
+            
           </a>
 
-          <a href="#projects" className="hover:text-white transition">
-            Projects
+          <a href="#projects" className="hover:text-blue-400 transition duration-300">
+            
           </a>
 
-          <a href="#contact" className="hover:text-white transition">
-            Contact
+          <a href="#contact" className="hover:text-blue-400 transition duration-300">
+            
           </a>
         </div>
       </nav>
@@ -54,9 +162,9 @@ export default function App() {
           B.Tech CSE Student
         </p>
 
-        <h2 className="text-4xl md:text-7xl font-bold leading-tight max-w-5xl">
-          MERN Stack Developer
-        </h2>
+       <h2 className="text-5xl md:text-8xl font-black leading-tight max-w-5xl bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-600 bg-clip-text text-transparent animate-pulse">
+  Full Stack Developer
+</h2>
 
         <p className="text-gray-400 mt-6 max-w-2xl text-base md:text-lg leading-8">
           Passionate about building responsive web applications using React,
@@ -73,13 +181,44 @@ export default function App() {
           <a
             href="https://github.com/umarrrashid"
             target="_blank"
-            rel="noreferrer"
             className="w-full sm:w-auto"
           >
             <button className="border border-gray-700 px-8 py-3 rounded-2xl hover:bg-gray-900 transition w-full">
               GitHub Profile
             </button>
           </a>
+        </div>
+        <div className="flex flex-wrap justify-center gap-3 mt-8">
+  {["React", "Node.js", "MongoDB", "Express", "Socket.io"].map((tech) => (
+    <span
+      key={tech}
+      className="px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 hover:scale-110 transition"
+    >
+      {tech}
+    </span>
+  ))}
+</div>
+           </section>
+
+      {/* Stats */}
+      <section className="px-6 md:px-24 pb-20">
+        <div className="grid grid-cols-3 gap-6 text-center">
+
+          <div className="bg-white/5 backdrop-blur-xl border border-blue-500/20 rounded-2xl p-6">
+            <h3 className="text-4xl font-bold">3+</h3>
+            <p className="text-gray-400">Projects</p>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-xl border border-blue-500/20 rounded-2xl p-6">
+            <h3 className="text-4xl font-bold">10+</h3>
+            <p className="text-gray-400">Technologies</p>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-xl border border-blue-500/20 rounded-2xl p-6">
+            <h3 className="text-4xl font-bold">2028</h3>
+            <p className="text-gray-400">Graduation</p>
+          </div>
+
         </div>
       </section>
 
@@ -135,13 +274,12 @@ export default function App() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="border border-gray-800 rounded-3xl p-8 hover:bg-gray-900 hover:-translate-y-2 transition duration-300"
-            >
+className="bg-white/5 backdrop-blur-xl border border-blue-500/20 rounded-3xl p-8 hover:-translate-y-4 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500"            >
               <img
-                src={project.image}
-                alt="Secure Chat App"
-                className="h-56 w-full object-cover rounded-2xl mb-6 border border-gray-700"
-              />
+  src={project.image}
+  alt={project.title}
+  className="h-64 w-full object-cover rounded-2xl mb-6 border border-blue-500/20"
+/>
 
               <h4 className="text-2xl font-semibold mb-4">
                 {project.title}
@@ -155,7 +293,6 @@ export default function App() {
                 <a
                   href={project.live}
                   target="_blank"
-                  rel="noreferrer"
                   className="w-full sm:w-auto"
                 >
                   <button className="bg-white text-black px-5 py-3 rounded-xl text-sm font-medium w-full hover:scale-105 transition">
@@ -166,7 +303,6 @@ export default function App() {
                 <a
                   href={project.github}
                   target="_blank"
-                  rel="noreferrer"
                   className="w-full sm:w-auto"
                 >
                   <button className="border border-gray-700 px-5 py-3 rounded-xl text-sm w-full hover:bg-gray-800 transition">
@@ -204,7 +340,6 @@ export default function App() {
           <a
             href="https://github.com/umarrrashid"
             target="_blank"
-            rel="noreferrer"
             className="hover:text-gray-300 transition"
           >
             GitHub
@@ -213,11 +348,19 @@ export default function App() {
           <a
             href="https://www.linkedin.com/in/me-umar-rashid"
             target="_blank"
-            rel="noreferrer"
             className="hover:text-gray-300 transition"
           >
             LinkedIn
           </a>
+          <a
+  href="https://wa.me/919905826142"
+  target="_blank"
+  rel="noreferrer"
+>
+  <button className="bg-green-600 px-6 py-3 rounded-xl font-semibold hover:scale-105 transition">
+    WhatsApp Me
+  </button>
+</a>
         </div>
       </section>
 
